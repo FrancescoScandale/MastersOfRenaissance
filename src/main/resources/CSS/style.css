@@ -1,0 +1,121 @@
+.pane{
+    -fx-background-image: url("../images/Parchment.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.smalltext{
+    -fx-font-family: "Enchanted Land";
+    -fx-font-size: 25;
+}
+
+.text{
+    -fx-font-family: "Enchanted Land";
+    -fx-font-size: 25;
+}
+
+.textbody{
+    -fx-font-family: "Enchanted Land";
+    -fx-font-size: 35;
+}
+
+.textBig{
+    -fx-font-family: "Enchanted Land";
+    -fx-font-size: 40;
+}
+
+.textError{
+    -fx-font-family: "Enchanted Land";
+    -fx-font-size: 35;
+    -fx-fill: red;
+}
+
+.player{
+    -fx-font-family: "Medici Text";
+    -fx-font-size: 60;
+}
+
+.number{
+    -fx-font-family: "Medici Text";
+    -fx-font-size: 35;
+    -fx-fill: white;
+}
+
+.smallnumber{
+    -fx-font-family: "Medici Text";
+    -fx-font-size: 20;
+}
+
+.opponentboardnumber{
+    -fx-font-family: "Medici Text";
+    -fx-font-size: 25;
+    -fx-fill: white;
+}
+
+
+.nickname{
+    -fx-font-family: "Enchanted Land";
+    -fx-font-size: 20;
+}
+
+.banner{
+    -fx-background-image: url("../images/Banner.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.help{
+    -fx-background-image: url("../images/Help.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.help:hover{
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+.banner:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.cancelbanner{
+    -fx-background-image: url("../images/CancelBanner.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.cancelbanner:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+
+.gameButton{
+    -fx-background-image: url("../images/Button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, -5, 5);
+}
+
+.gameButton:hover{
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+.selectable:hover{
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+.bigselectable:hover{
+    -fx-scale-y: 1.4;
+    -fx-scale-x: 1.4;
+}
+
+.physical{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, -5, 5);
+}

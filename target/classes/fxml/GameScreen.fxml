@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="game" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../CSS/style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.view.GUI.screenView.GameScreenView">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0">
+         <image>
+            <Image url="@../images/Parchment.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="331.0" layoutX="318.0" layoutY="280.0">
+         <image>
+            <Image url="@../images/Frieze.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="309.0" layoutY="419.0" prefHeight="419.0" prefWidth="632.0" scaleX="1.08" scaleY="1.08">
+         <children>
+            <ImageView fitHeight="399.0" fitWidth="600.0" layoutX="7.0" layoutY="3.0" scaleX="1.08" scaleY="1.08" styleClass="physical">
+               <image>
+                  <Image url="@../images/Board.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P_B_6" fitHeight="96.0" fitWidth="101.0" layoutX="132.0" layoutY="269.0">
+               <image>
+                  <Image url="@../images/Base production .png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="W1_1" layoutX="58.0" layoutY="178.0" prefHeight="20.0" prefWidth="25.0" scaleX="1.08" scaleY="1.08" />
+            <Pane fx:id="W2_1" layoutX="45.0" layoutY="211.0" prefHeight="20.0" prefWidth="25.0" scaleX="1.08" scaleY="1.08" />
+            <Pane fx:id="W2_2" layoutX="70.0" layoutY="211.0" prefHeight="20.0" prefWidth="25.0" scaleX="1.08" scaleY="1.08" />
+            <Pane fx:id="W3_1" layoutX="31.0" layoutY="250.0" prefHeight="20.0" prefWidth="25.0" scaleX="1.08" scaleY="1.08" />
+            <Pane fx:id="W3_2" layoutX="55.0" layoutY="249.0" prefHeight="20.0" prefWidth="23.0" scaleX="1.08" scaleY="1.08" />
+            <Pane fx:id="W3_3" layoutX="81.0" layoutY="250.0" prefHeight="20.0" prefWidth="25.0" scaleX="1.08" scaleY="1.08" />
+            <Pane fx:id="SB_CO_PANE" layoutX="3.0" layoutY="304.0" prefHeight="41.0" prefWidth="62.0" scaleX="1.08" scaleY="1.08">
+               <children>
+                  <ImageView fx:id="SB_CO_ICON" fitHeight="31.0" fitWidth="37.0" layoutY="3.0">
+                     <image>
+                        <Image url="@../images/resources/CO.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="SB_CO" layoutX="42.0" layoutY="25.0" styleClass="number" />
+               </children>
+            </Pane>
+            <Pane fx:id="SB_SE_PANE" layoutX="63.0" layoutY="303.0" prefHeight="41.0" prefWidth="62.0" scaleX="1.08" scaleY="1.08">
+               <children>
+                  <ImageView fx:id="SB_SE_ICON" fitHeight="31.0" fitWidth="37.0" layoutY="3.0">
+                     <image>
+                        <Image url="@../images/resources/SE.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="SB_SE" layoutX="42.0" layoutY="25.0" styleClass="number" />
+               </children>
+            </Pane>
+            <Pane fx:id="SB_SH_PANE" layoutX="3.0" layoutY="349.0" prefHeight="41.0" prefWidth="62.0" scaleX="1.08" scaleY="1.08">
+               <children>
+                  <ImageView fx:id="SB_SH_ICON" fitHeight="32.0" fitWidth="33.0" layoutY="3.0">
+                     <image>
+                        <Image url="@../images/resources/SH.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="SB_SH" layoutX="42.0" layoutY="25.0" styleClass="number" />
+               </children>
+            </Pane>
+            <Pane fx:id="SB_ST_PANE" layoutX="63.0" layoutY="346.0" prefHeight="41.0" prefWidth="62.0">
+               <children>
+                  <ImageView fx:id="SB_ST_ICON" fitHeight="32.0" fitWidth="34.0" layoutX="-3.0" layoutY="5.0">
+                     <image>
+                        <Image url="@../images/resources/ST.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="SB_ST" layoutX="42.0" layoutY="25.0" styleClass="number" />
+               </children>
+            </Pane>
+            <ImageView fx:id="PF1" fitHeight="50.0" fitWidth="50.0" layoutX="139.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="PF2" fitHeight="50.0" fitWidth="50.0" layoutX="299.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="PF3" fitHeight="50.0" fitWidth="50.0" layoutX="489.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
+            <GridPane fx:id="FaithTrack" layoutX="31.0" layoutY="15.0" prefHeight="82.0" prefWidth="557.0" scaleX="1.08" scaleY="1.08">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.0" minWidth="29.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.68" minWidth="29.68" prefWidth="29.68" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.68" minWidth="29.68" prefWidth="29.68" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.68" minWidth="29.68" prefWidth="29.68" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.68" minWidth="29.68" prefWidth="29.68" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.68" minWidth="29.68" prefWidth="29.68" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="29.68" minWidth="29.68" prefWidth="29.68" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="29.55560302734375" minHeight="10.0" prefHeight="29.55560302734375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.33331298828125" minHeight="10.0" prefHeight="30.44439697265625" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="Slots" layoutX="235.0" layoutY="176.0" prefHeight="207.0" prefWidth="363.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="0" />
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="RES_P1" layoutX="230.0" layoutY="121.0" prefHeight="41.0" prefWidth="119.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="RES_P2" layoutX="352.0" layoutY="121.0" prefHeight="41.0" prefWidth="119.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="RES_P3" layoutX="479.0" layoutY="121.0" prefHeight="41.0" prefWidth="119.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="RES_P6" layoutX="167.0" layoutY="153.0" prefHeight="123.0" prefWidth="61.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <ImageView fx:id="S_2_ARROW" fitHeight="28.0" fitWidth="25.0" layoutX="401.0" layoutY="124.0">
+               <image>
+                  <Image url="@../images/Board Arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="S_3_ARROW" fitHeight="28.0" fitWidth="25.0" layoutX="533.0" layoutY="124.0">
+               <image>
+                  <Image url="@../images/Board Arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="S_1_ARROW" fitHeight="28.0" fitWidth="25.0" layoutX="276.0" layoutY="124.0">
+               <image>
+                  <Image url="@../images/Board Arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="658.0" layoutY="3.0" prefHeight="399.0" prefWidth="319.0">
+         <children>
+            <ImageView fitHeight="393.0" fitWidth="307.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" scaleX="0.9" scaleY="0.9" styleClass="physical">
+               <image>
+                  <Image url="@../images/MarketBoard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="203.0" fitWidth="265.0" layoutX="28.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" scaleX="0.9" scaleY="0.9">
+               <image>
+                  <Image url="@../images/MarblesTable.png" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="ResourceMarket" layoutX="101.0" layoutY="97.0" prefHeight="101.0" prefWidth="145.0" scaleX="0.9" scaleY="0.9">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="35.1087646484375" minHeight="10.0" prefHeight="33.55438232421875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.9637451171875" minHeight="10.0" prefHeight="30.44561767578125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.108795166015625" minHeight="10.0" prefHeight="33.0362548828125" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <AnchorPane layoutX="217.0" layoutY="63.0" prefHeight="30.44561767578125" prefWidth="33.55438232421875" scaleX="0.9" scaleY="0.9">
+               <children>
+                  <ImageView fx:id="rm" fitHeight="33.0" fitWidth="33.0" layoutX="7.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="R_1" fitHeight="25.0" fitWidth="44.0" layoutX="264.0" layoutY="105.0" styleClass="bigselectable">
+               <image>
+                  <Image url="@../images/Horizontal arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="C_1" fitHeight="59.0" fitWidth="29.0" layoutX="109.0" layoutY="224.0" styleClass="bigselectable">
+               <image>
+                  <Image url="@../images/Vertical arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="C_2" fitHeight="59.0" fitWidth="29.0" layoutX="142.0" layoutY="224.0" styleClass="bigselectable">
+               <image>
+                  <Image url="@../images/Vertical arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="C_3" fitHeight="59.0" fitWidth="29.0" layoutX="173.0" layoutY="224.0" styleClass="bigselectable">
+               <image>
+                  <Image url="@../images/Vertical arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="C_4" fitHeight="59.0" fitWidth="29.0" layoutX="204.0" layoutY="224.0" styleClass="bigselectable">
+               <image>
+                  <Image url="@../images/Vertical arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="R_2" fitHeight="25.0" fitWidth="44.0" layoutX="264.0" layoutY="136.0" styleClass="bigselectable">
+               <image>
+                  <Image url="@../images/Horizontal arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="R_3" fitHeight="25.0" fitWidth="44.0" layoutX="264.0" layoutY="167.0" styleClass="bigselectable">
+               <image>
+                  <Image url="@../images/Horizontal arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <GridPane fx:id="LeaderCardsPlayed" layoutX="328.0" layoutY="38.0" prefHeight="231.0" prefWidth="331.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.5" minWidth="165.5" prefWidth="165.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.5" minWidth="165.5" prefWidth="165.5" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ImageView fitHeight="54.0" fitWidth="545.0" layoutX="1014.0" layoutY="275.0">
+         <image>
+            <Image url="@../images/Frieze.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="545.0" layoutX="1014.0" layoutY="555.0">
+         <image>
+            <Image url="@../images/Frieze.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="CardMarket" layoutX="994.0" layoutY="24.0" prefHeight="856.0" prefWidth="579.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="confirmAction" layoutX="284.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#handleConfirmClick" prefWidth="150" styleClass="gameButton" text="Conferma  azione" />
+      <Button fx:id="endTurn" layoutX="532.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#handleEndTurnClick" prefWidth="150" styleClass="gameButton" text="Fine  turno" />
+      <GridPane fx:id="players" layoutX="39.0" layoutY="14.0" prefHeight="484.0" prefWidth="197.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="RES_P4" layoutX="328.0" layoutY="57.0" prefHeight="70.0" prefWidth="165.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="RES_P5" layoutX="500.0" layoutY="57.0" prefHeight="70.0" prefWidth="165.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button layoutX="459.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#help" prefHeight="44.0" prefWidth="44.0" styleClass="help" />
+      <ImageView fitHeight="347.0" fitWidth="177.0" layoutX="49.0" layoutY="527.0" styleClass="physical">
+         <image>
+            <Image url="@../images/Wooden Box.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="Hand" layoutX="77.0" layoutY="554.0" prefHeight="289.0" prefWidth="118.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.1939468383789" minWidth="10.0" prefWidth="101.1939468383789" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.8060531616211" minWidth="10.0" prefWidth="98.8060531616211" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
