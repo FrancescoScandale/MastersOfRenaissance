@@ -42,7 +42,6 @@ public class CLI extends ViewObservable implements View {
         System.out.println("Inserisci Indirizzo IP e Porta del server a cui vuoi connetterti");
         while(!state.equals(ViewState.disconnected)) {
             String message = scanner.nextLine();
-            System.out.println("STATE -> " + state);
             if (state.equals(ViewState.start)) {
                 try {
                     String[] s = message.split(" ");

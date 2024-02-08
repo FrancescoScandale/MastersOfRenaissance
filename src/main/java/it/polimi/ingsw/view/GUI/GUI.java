@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class GUI extends Application implements View{
+public class GUI extends Application implements View {
 
     private ViewState state = ViewState.start;
     private Stage primaryStage;

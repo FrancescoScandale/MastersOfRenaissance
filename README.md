@@ -20,7 +20,7 @@ Scaglione Cugola - Gruppo GC36
 * Marta Radaelli
 
 # Launching the application
-The application is contained in a single JAR file, which can be found in the Deliveries section of the repository
+The application is contained in a single JAR file, which can be found in the Deliveries section of the repository.
 
 ## Server
 The machine running the server must be reachable from the clients in order to play the game. To start the server, use the command
@@ -42,7 +42,7 @@ from there, you can add a few extra flags:
 
 -cli -color lets you launch the command line interface with added depth, but make sure your Shell fully supports ANSI color codes, otherwise you will encounter a few problems during the game
 
--cli -gui lets you launch the application via a graphic interface (which is strongly recommended to enjoy the game)
+-gui lets you launch the application via a graphic interface (which is strongly recommended to enjoy the game)
 
 ## Test Coverage
 The application has been thoroughly tested via automated tests (Junit) in controller and model classes, further testing has been done manually for all the other classes. 
